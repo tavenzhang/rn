@@ -25,7 +25,9 @@ ipaName=rd.ipa
    payloadPath=build/temp/Payload
    appFileFullPath=${buildPath}/Build/Products/Release-iphoneos/${targetName}.app
 
+   rm -rf ${buildPath}
    mkdir -p ${buildPath} ${payloadPath} ${buildPath}
+
    xcodebuild  -scheme ${targetName}  -sdk iphoneos -derivedDataPath  ${buildPath}  -project ${iosRoot}/rdMyAPP.xcodeproj  -configuration Release  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
    if [ $? -eq 0 ];then
       echo ${app} '编译成功'
