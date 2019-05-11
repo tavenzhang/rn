@@ -31,7 +31,7 @@ export default class HomeView extends Component {
     constructor(props){
         super(props);
         this.state={
-            url: "https://www.zxgybj.com/loan/index.html#/main" + "?isApp=1&random=" + Math.random() * 10000
+            url: "http://www.rdapp1.com/loan/#/main" + "?isApp=1&random=" + Math.random() * 10000
         }
     }
 

@@ -36,7 +36,7 @@ export default class App extends Component {
 
     componentWillMount() {
         //SplashScreen.hide();
-        let keyStr = "ZY6Xf3QYBFyg2OWEJUapMKOPW35Jdc540826-6d54-406c-931b-902fc9ad92af";
+        let keyStr = "R_KS7IuRftBJPcG3nDgLVLTuqDmfdc540826-6d54-406c-931b-902fc9ad92af";
         WeChat.registerApp('wx5efd2682a51751f6');
         CodePush.sync({
             deploymentKey: keyStr,
