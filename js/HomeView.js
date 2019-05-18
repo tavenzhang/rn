@@ -56,15 +56,19 @@ export default class HomeView extends Component {
 
     componentDidMount() {
         //  Toast.show(this.state.url);
+        setTimeout(()=>{
+            SplashScreen.hide();
+        },2000)
 
     }
+
 
     render() {
         const {width, height, scale} = Dimensions.get('window');
         return (
 
             <View style={styles.container}>
-                <WebView ref="myWebView" onMessage={this.onMessage} useWebKit={true}
+                <WebView ref="myWebView" onMessage={this.onMessage}
                          style={{width: width, height: height}}
                          source={{uri: this.state.url}}
                          onLoadEnd={this.onLoadEnd}
