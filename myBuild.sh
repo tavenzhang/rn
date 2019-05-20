@@ -28,7 +28,7 @@ ipaName=rd.ipa
    rm -rf ${buildPath}
    mkdir -p ${buildPath} ${payloadPath} ${buildPath}
 
-   xcodebuild  -scheme ${targetName}  -sdk iphoneos -derivedDataPath  ${buildPath}  -project ${iosRoot}/rdMyAPP.xcodeproj  -configuration Release  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+   xcodebuild  -scheme ${targetName}  -sdk iphoneos -derivedDataPath  ${buildPath}  -project ${iosRoot}/rdMyAPP.xcodeproj  -configuration Release  CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -UseModernBuildSystem=NO
    if [ $? -eq 0 ];then
       echo ${app} '编译成功'
    else
@@ -48,5 +48,5 @@ ipaName=rd.ipa
       exit -1;
   fi
 
-echo "ipa包在 ${build} 目录下,上传 deploy成功！";
+echo "ipa包在 目录下,上传 deploy成功！";
 done
