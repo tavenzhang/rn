@@ -1,0 +1,15 @@
+<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>8MR7PRV967.*</string>		
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>8MR7PRV967.com.jd.01</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>8MR7PRV967</string>
+		<key>aps-environment</key>
+		<string>production</string>
+
+	</dict>
