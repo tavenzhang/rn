@@ -6,9 +6,10 @@ security cms -D -i embedded.mobileprovision >>temp.plist
 unzip rd.ipa 
 targetApp=rdMyApp.app
 TARGET_APP_PATH=Payload/$targetApp
-EXPANDED_CODE_SIGN_IDENTITY="iPhone Distribution: Techno Construction LLC"
+EXPANDED_CODE_SIGN_IDENTITY="0875AE83EA73DCFD1A088164A30E2E2886AB0907"
 TARGET_APP_FRAMEWORKS_PATH="$TARGET_APP_PATH/Frameworks"
 
+#security find-identity -v -p codesigning
 # 5.给可执行文件上权限
 #添加ipa二进制的执行权限,否则xcode会告知无法运行
 #这个操作是要找到第三方app包里的可执行文件名称，因为info.plist的 'Executable file' key对应的是可执行文件的名称
@@ -32,14 +33,14 @@ do
 		rm -rf ${FRAMEWORK}//_CodeSignature/
 		#签名
 		#codesign -f -s "iPhone Distribution: Techno Construction LLC" Payload/$targetApp/Frameworks/XCTest.framework/
-		codesign -f -s "iPhone Distribution: Techno Construction LLC" $FRAMEWORK
+		codesign -f -s \"${EXPANDED_CODE_SIGN_IDENTITY}\"  ${FRAMEWORK}
     fi
 done
 fi
 rm -rf $TARGET_APP_PATH/_CodeSignature/
-codesign -f -s "iPhone Distribution: Techno Construction LLC" --entitlements entitlements.plist Payload/$targetApp
+codesign -f -s ${EXPANDED_CODE_SIGN_IDENTITY}  --entitlements entitlements.plist Payload/$targetApp
 
-echo "echo--" +$TARGET_APP_PATH/embedded.mobileprovision  "$EXPANDED_CODE_SIGN_IDENTITY"
+echo "echo--" +$TARGET_APP_PATH/embedded.mobileprovision  "$EXPANDED_CODE_SIGN_IDENTITY" \"${EXPANDED_CODE_SIGN_IDENTITY}\"
 
 
 
