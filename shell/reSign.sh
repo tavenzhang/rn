@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 # !/bin/bash
 # from http://www.xgiovio.com/blog-photos-videos-other/blog/resign-your-ios-ipa-frameworks-and-plugins-included/

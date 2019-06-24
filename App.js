@@ -22,9 +22,8 @@ const instructions = Platform.select({
         'Double tap R on your keyboard to reload,\n' +
         'Shake or press menu button for dev menu',
 });
-import Toast from 'react-native-root-toast';
+
 import CodePush from "react-native-code-push";
-import HomeView from "./js/HomeView";
 import RoutStack from "./js/rout";
 
 export default class App extends Component {

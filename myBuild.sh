@@ -47,6 +47,8 @@ ipaName=rd.ipa
       echo "打包失败 签名错误" 
       exit -1;
   fi
+echo "ipa包在 目录下,上传 deploy成功！"
 
-echo "ipa包在 目录下,上传 deploy成功！";
-done
+
+
+
