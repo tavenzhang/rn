@@ -15,10 +15,6 @@ ipaName=rd.ipa
 #产品输出目录
 #outPutDir=${scriptPath}/out
 
-
-# CODE_SIGN_IDENTITY="iPhone Distribution: ALBARINA"
-
-
    cd ${iosRoot}
 
    buildPath=build/build
@@ -40,13 +36,15 @@ ipaName=rd.ipa
     cd build/temp
     zip -q -r ${ipaName} Payload
 
-
   if [ $? -eq 0 ];then	
       echo '打包签名成功'
   else
       echo "打包失败 签名错误" 
       exit -1;
   fi
+  rm -rf ${workRoot}/shell/source.ipa
+  cp -rf  ${ipaName}  ${workRoot}/shell/source.ipa
+
 echo "ipa包在 目录下,上传 deploy成功！"
 
 
