@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppIDName</key>
+	<string>jd</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+	<string>8MR7PRV967</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2018-09-21T02:20:25Z</date>
+	<key>Platform</key>
+	<array>
+		<string>iOS</string>
+	</array>
+    <key>IsXcodeManaged</key>
+    <false/>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFljCCBH6gAwIBAgIIIgh4Jg1yiqcwDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTgwNDEyMDgyMzM2WhcNMjEwNDExMDgyMzM2WjCBlzEaMBgGCgmSJomT8ixkAQEMCjhNUjdQUlY5NjcxNTAzBgNVBAMMLGlQaG9uZSBEaXN0cmlidXRpb246IFRlY2hubyBDb25zdHJ1Y3Rpb24gTExDMRMwEQYDVQQLDAo4TVI3UFJWOTY3MSAwHgYDVQQKDBdUZWNobm8gQ29uc3RydWN0aW9uIExMQzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxmJawwhcDr/a5AfVXp7AyRe/HuvVHj+S8C99RFD/6j7//U8nJK3ankcSr5ju0JIRwya+yYXOlcpsQp6CBGROfd1MAmr+PQEEx6PDwAhZoacV7D5p1DoET6+WxsEjeW6tElLM7VJU7kkpzX7Bs+SuqwGx/zQBAQBG41+V+PvfLUaDQ+9RBRGKuS2phxV+NoLVifdj5mMIcSEsAFuiWJCim+6B6j/z6rfiPQ/MwBTitavZbLRExYBtdx8YcypPgzSw2WNM+ut1X4u+LaZrlqTB0PEIGDIpkRJRpxRqmJ3IuLidnlr28+nCCU22ptX3xb30Zwo3HUK7qjU3izpPCwZxlAgMBAAGjggHjMIIB3zA/BggrBgEFBQcBAQQzMDEwLwYIKwYBBQUHMAGGI2h0dHA6Ly9vY3NwLmFwcGxlLmNvbS9vY3NwMDItd3dkcjAxMB0GA1UdDgQWBBRMmsCHjMly8mjJRbGz+pyymiVcFTAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFIgnFwmpthhgi+zruvZHWcVSVKO3MIIBDwYDVR0gBIIBBjCCAQIwgf8GCSqGSIb3Y2QFATCB8TCBwwYIKwYBBQUHAgIwgbYMgbNSZWxpYW5jZSBvbiB0aGlzIGNlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBhc3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFyZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRlIHBvbGljeSBhbmQgY2VydGlmaWNhdGlvbiBwcmFjdGljZSBzdGF0ZW1lbnRzLjApBggrBgEFBQcCARYdaHR0cDovL3d3dy5hcHBsZS5jb20vYXBwbGVjYS8wDgYDVR0PAQH/BAQDAgeAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMDMBMGCiqGSIb3Y2QGAQQBAf8EAgUAMA0GCSqGSIb3DQEBBQUAA4IBAQByfRJOU+e3/0cku2FtWJ7AtjmKWYTUyjvFVSyItn8ZBmkIvwBJnKc2rama09m92G/aHyNpvyG8ppd5nY0jMSPuX164POrz2XQ2ajU6Nm3HpZMFpR8l7gARm7aFbn/5nmrNhfpAX2SW4zsJPZvGaxeP6Q5hsexs8j70V+yJX+K+XecKKsVdG4qNUqxOoV16ekVHDhDE+ejmHx7sc7i8COfUhTxeomW/p7eGMinc6GYo72GFFD9tPoy+ZDDWPecvzEFws+gtRHhDQ3FVW5uEhKgVp77wCDgOkf0RebdDgkItIKuAGNhSGC3q1WK0DBJNb57YpPUu1neGo379kOx7g1S3</data>
+	</array>
+
+
+	<key>Entitlements</key>
+	<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>8MR7PRV967.*</string>		
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>8MR7PRV967.com.jd.01</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>8MR7PRV967</string>
+		<key>aps-environment</key>
+		<string>production</string>
+
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2019-09-21T02:20:25Z</date>
+	<key>Name</key>
+	<string>01</string>
+	<key>ProvisionsAllDevices</key>
+	<true/>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>8MR7PRV967</string>
+	</array>
+	<key>TeamName</key>
+	<string>Techno Construction LLC</string>
+	<key>TimeToLive</key>
+	<integer>365</integer>
+	<key>UUID</key>
+	<string>f2a36c00-8e75-4c51-a976-d8479a982982</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -37,34 +37,24 @@ export default class HomeView extends Component {
 
     componentWillMount() {
         // SplashScreen.hide();
-        // let keyStr = "ZY6Xf3QYBFyg2OWEJUapMKOPW35Jdc540826-6d54-406c-931b-902fc9ad92af";
-        // WeChat.registerApp('wx5efd2682a51751f6');
-        // CodePush.sync({
-        //     deploymentKey: keyStr,
-        //     updateDialog: {
-        //         optionalIgnoreButtonLabel: '稍后',
-        //         optionalInstallButtonLabel: '自动更新',
-        //         optionalUpdateMessage: '网站升级，请尽快点击自动更新升级体验吧!',
-        //         title: '更新提示'
-        //     },
-        //     installMode: CodePush.InstallMode.IMMEDIATE
-        // })
-        // setTimeout(()=>{
-        //     this.onMsgHandle({action: "appLink", data: "https://www.hao123.com/"})
-        // },3000)
+
     }
 
     componentDidMount() {
         //  Toast.show(this.state.url);
+        setTimeout(()=>{
+            SplashScreen.hide();
+        },2000)
 
     }
+
 
     render() {
         const {width, height, scale} = Dimensions.get('window');
         return (
 
             <View style={styles.container}>
-                <WebView ref="myWebView" onMessage={this.onMessage} useWebKit={true}
+                <WebView ref="myWebView" onMessage={this.onMessage}
                          style={{width: width, height: height}}
                          source={{uri: this.state.url}}
                          onLoadEnd={this.onLoadEnd}
