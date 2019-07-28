@@ -1191,7 +1191,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = org.my.rdApp;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1221,7 +1221,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = org.my.rdApp;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";

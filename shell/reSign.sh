@@ -12,11 +12,11 @@ unzip -qo "$SOURCEIPA" -d extracted
  
 APPLICATION=$(ls extracted/Payload/)
  
-cp "$MOBILEPROV" "extracted/Payload/$APPLICATION/embedded.mobileprovision"
+cp "$MOBILEPROV" "extracted/Payload/$APPLICATION/96cc.mobileprovision"
  
 echo "Resigning with certificate: $DEVELOPER" >&2
 find -d extracted  \( -name "*.app" -o -name "*.appex" -o -name "*.framework" -o -name "*.dylib" \) > directories.txt
-security cms -D -i "extracted/Payload/$APPLICATION/embedded.mobileprovision" > t_entitlements_full.plist
+security cms -D -i "extracted/Payload/$APPLICATION/96cc.mobileprovision" > t_entitlements_full.plist
 /usr/libexec/PlistBuddy -x -c 'Print:Entitlements' t_entitlements_full.plist > t_entitlements.plist
 #/usr/libexec/PlistBuddy -c 'Print:application-identifier' t_entitlements.plist > t_entitlements_application-identifier   #save developer application-identifier to file
 #/usr/libexec/PlistBuddy -c 'Print:com.apple.developer.team-identifier' t_entitlements.plist > t_entitlements_com.apple.developer.team-identifier  #save com.apple.developer.team-identifier application-identifier to file
