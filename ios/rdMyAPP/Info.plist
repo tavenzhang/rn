@@ -39,6 +39,7 @@
 	<string>ZY6Xf3QYBFyg2OWEJUapMKOPW35Jdc540826-6d54-406c-931b-902fc9ad92af</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>alipay</string>
 		<string>weixin</string>
 		<string>wechat</string>
 	</array>
@@ -58,6 +59,8 @@
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>NSMicrophoneUsageDescription</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME)</string>
