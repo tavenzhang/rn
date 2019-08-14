@@ -49,7 +49,7 @@ export default class WebViewSub extends Component {
         return (
 
             <View style={styles.container}>
-                <WebView ref="myWebView"  onMessage={this.onMessage} useWebKit={true}
+                <WebView ref="myWebView"  onMessage={this.onMessage}
                          style={{width: width, height: height}}
                          source={{uri: url}}
                          automaticallyAdjustContentInsets={true}
