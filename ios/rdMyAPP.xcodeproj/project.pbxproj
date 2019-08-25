@@ -324,13 +324,6 @@
 			remoteGlobalIDString = 86D238421BD0BB9E00C75D01;
 			remoteInfo = RCTWeChat;
 		};
-		E9CFD6842276279C002D7A1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6803B33E9584382B6742EBF /* RCTWeChat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 10D6D7A41F160C250066F0F3;
-			remoteInfo = RCTWeChatTests;
-		};
 		E9CFD6D022762C2A002D7A1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD8BD79573F44E029BB64837 /* CodePush.xcodeproj */;
@@ -354,8 +347,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* rdMyAPPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rdMyAPPTests.m; sourceTree = "<group>"; };
 		056FC87349E041E687BEB601 /* RCTWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RCTWeChatTests.xctest; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -462,23 +453,6 @@
 				00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		00E356EF1AD99517003FC87E /* rdMyAPPTests */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F21AD99517003FC87E /* rdMyAPPTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
-			);
-			path = rdMyAPPTests;
-			sourceTree = "<group>";
-		};
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
@@ -607,7 +581,6 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* rdMyAPP */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* rdMyAPPTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E979DC8F21D000C000F1AF97 /* Recovered References */,
@@ -667,7 +640,6 @@
 			isa = PBXGroup;
 			children = (
 				E9CFD6832276279C002D7A1A /* libRCTWeChat.a */,
-				E9CFD6852276279C002D7A1A /* RCTWeChatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -712,7 +684,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = ZBE9R237M6;
+						DevelopmentTeam = 23DN84VL44;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1090,13 +1062,6 @@
 			remoteRef = E9CFD6822276279C002D7A1A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E9CFD6852276279C002D7A1A /* RCTWeChatTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RCTWeChatTests.xctest;
-			remoteRef = E9CFD6842276279C002D7A1A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		E9CFD6D122762C2A002D7A1A /* libCodePush.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1138,7 +1103,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1176,7 +1141,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = ZBE9R237M6;
+				DEVELOPMENT_TEAM = 23DN84VL44;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1191,7 +1156,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qp.new;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1206,7 +1171,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZBE9R237M6;
+				DEVELOPMENT_TEAM = 23DN84VL44;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1221,7 +1186,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qp.new;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
