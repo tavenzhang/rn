@@ -324,13 +324,6 @@
 			remoteGlobalIDString = 86D238421BD0BB9E00C75D01;
 			remoteInfo = RCTWeChat;
 		};
-		E9CFD6842276279C002D7A1A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6803B33E9584382B6742EBF /* RCTWeChat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 10D6D7A41F160C250066F0F3;
-			remoteInfo = RCTWeChatTests;
-		};
 		E9CFD6D022762C2A002D7A1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FD8BD79573F44E029BB64837 /* CodePush.xcodeproj */;
@@ -667,7 +660,6 @@
 			isa = PBXGroup;
 			children = (
 				E9CFD6832276279C002D7A1A /* libRCTWeChat.a */,
-				E9CFD6852276279C002D7A1A /* RCTWeChatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -712,7 +704,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = ZBE9R237M6;
+						DevelopmentTeam = 23DN84VL44;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1090,13 +1082,6 @@
 			remoteRef = E9CFD6822276279C002D7A1A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E9CFD6852276279C002D7A1A /* RCTWeChatTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RCTWeChatTests.xctest;
-			remoteRef = E9CFD6842276279C002D7A1A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		E9CFD6D122762C2A002D7A1A /* libCodePush.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1176,7 +1161,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = ZBE9R237M6;
+				DEVELOPMENT_TEAM = 23DN84VL44;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1191,7 +1176,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qp.new;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1206,7 +1191,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZBE9R237M6;
+				DEVELOPMENT_TEAM = 23DN84VL44;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
@@ -1221,7 +1206,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.my.zrd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qp.new;
 				PRODUCT_NAME = rdMyAPP;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
